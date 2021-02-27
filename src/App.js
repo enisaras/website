@@ -26,19 +26,4 @@ function App() {
     );
 };
 
-function QuoteMaker() {
-    return (
-      <blockquote>
-        <p>
-          I find your lack of faith disturbing.
-        </p>
-        <cite>
-          <a target="_blank"
-            href="https://en.wikipedia.org/wiki/Darth_Vader">
-            Darth Vader
-          </a>
-        </cite>
-      </blockquote>
-    );
-  }
 export default App;
