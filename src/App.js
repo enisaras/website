@@ -1,29 +1,15 @@
+import React from 'react';
 import './App.css';
-
+import{BrowserRouter as Router,Route,} from "react-router-dom";
+import Navbar from './components/Navbar';
 function App() {
-
     return (
-      <blockquote>
-        <p>
-          The world is full of objects, more or less interesting; I do not wish to add any more.
-        </p>
-        <cite>
-          <a target="_blank"
-            href="https://en.wikipedia.org/wiki/Douglas_Huebler">
-            Douglas Huebler
-          </a>
-        </cite>
-        <p>
-          I find your lack of faith disturbing.
-        </p>
-        <cite>
-          <a target="_blank"
-            href="https://en.wikipedia.org/wiki/Darth_Vader">
-            Darth Vader
-          </a>
-        </cite>
-      </blockquote>
-    );
+    <Router>
+      <div className = "App">
+        <Navbar />
+      </div>
+    </Router>
+    )
 };
 
 export default App;
