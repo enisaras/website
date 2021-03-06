@@ -22,7 +22,7 @@ class Navbar extends Component {
         return (
             <nav>
             <ul>
-            <Navitem item="Home" tolink="/" 
+            <Navitem item="Home" tolink="/website" 
             activec = {this.activeitem}></Navitem>
             <Navitem item="About" tolink="/about" 
             activec = {this.activeitem}></Navitem>

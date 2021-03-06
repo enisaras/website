@@ -13,7 +13,7 @@ function App() {
         <div className="App">
         <Navbar />
         {/* Route for Home.js contents */}
-        <Route exact path="/">
+        <Route path="/website">
           <Home />
         </Route>
         {/* Route for About.js contents */}

@@ -8,7 +8,7 @@ return (
 <h1>I'm Enis Aras</h1>
 <h3>Computer Science and Finance student at <u>Rensselaer Polytechnic Instute</u> | Developer at <u>Quantify</u></h3>
 <br></br>
-<p>From a young age computers and everything behind them have been my passion.
+<p>From a young age computers and everything related to them have been my passion.
     To turn my passion into a proffesion I am pursuing my Computer Science degree
     at Rensselaer Polytechnic Instute. I have many interests, Data Science, Quantitive Analysis, Quantitive Development,
     Machine Learning, Software Development, Full Stack Web Development and more as I go along my journey.
