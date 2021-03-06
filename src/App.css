@@ -35,6 +35,31 @@ flex:var(--sidebar-flex);
 background: rgb(238,103,143);
 background: linear-gradient(180deg, rgba(238,103,143,1) 50%, rgba(132,124,252,1) 80%);
 }
+.condiv
+{
+  padding: 100px ;
+  background-color: #f4f5f9;
+  flex:var(--condiv-flex);
+}
+
+.home
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.profilepic
+{
+  width: 400px;
+  margin: 40px;
+}
+.typingeffect
+{
+  font-size: var(--typing-font);
+  margin-bottom: 30px;
+}
 nav ul
 {
   font-size:var(--fontsize-nav) ;
@@ -50,4 +75,34 @@ nav ul li
 .active
 {
 font-weight: bolder;
+}
+
+.social
+{
+position: absolute;
+margin-top: 20px;
+display: flex;
+bottom: 60px;
+}
+.social i
+{
+padding-right: 30px;
+font-size: 25px;
+color: #9a9b9c;
+}
+.social i:hover
+{
+color: #ffffff;
+}
+.subtopic
+{
+margin:10px 10px 30px 10px !important;
+}
+p
+{
+font-size: var(--fontsize-p);
+}
+h1,h2,h3,h4,p
+{
+margin: 10px;
 }
