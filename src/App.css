@@ -161,12 +161,30 @@ h1,h2,h3,h4,p{
   {
     padding-right: 0px;
   }
-  a.email{
-    color: rgb(17, 5, 5);
-  }
-  new
-  {
-    text-decoration: none;
-    color: red;
-  }
+ 
+  
+}
+a.email{
+  color: rgb(17, 5, 5);
+}
+.Collapsible{
+  color: rgb(34, 3, 3);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+
+.Collapsible__contentInner{
+  padding: 0 18px;
+  background-color: rgb(255, 255, 255);
+  font-size: 15px;
+
+}
+.b{
+  font-size :xx-large;
 }
