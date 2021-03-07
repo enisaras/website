@@ -14,7 +14,7 @@ this.state={
 render() {
 return (
 <div className="condiv skills">
-<h1 className="subtopic">Languages</h1>
+<h1>Languages</h1>
 <ul>
     {this.state.languages.map((languages)=>{
     return <li>{languages}</li>

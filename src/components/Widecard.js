@@ -11,11 +11,11 @@ return (
 <h4 class= "secondtext">{this.props.from} - {this.props.to}</h4>
 <Collapsible trigger = {this.props.coursework} open = "false">
     <Collapsible classParentString = "b" trigger = {this.props.course1}>
+        <li>Learned about Data Structures like stacks, queues, lists, trees, and collections and how to use them.</li>
 
     </Collapsible>
 </Collapsible>
 </Collapsible>
-<Social />
 </div>
 )
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 :root{
   --sidebar-flex:1.5;
   --condiv-flex:6;
@@ -6,81 +6,19 @@
   --fontsize-nav:1.6rem;
   --typing-font:3rem;
 }
-*
+.subtopic
 {
-  margin:0;
-  padding: 0;
+  margin:10px 10px 30px 10px !important;
 }
-body{
-  font-family: 'Raleway';
-}
-.App
-{
-  display: flex;
-  width: 100vw;
-  min-height: 100vh;
-}
-nav
-{
-  padding:60px 30px 0px 30px ;
-  flex:var(--sidebar-flex);
-  background: rgb(238,103,143);
-  background: linear-gradient(180deg, rgba(238,103,143,1) 50%, rgba(132,124,252,1) 80%);
-}
-.condiv
-{
-  padding: 100px ;
-  background-color: #f6f6f8;
-  flex:var(--condiv-flex);
-}
-
-.home
-{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  
-}
-.profilepic
-{
-  border-radius: 50%;
-  width: 200px;
+.profilepic{
+  width: 300px;
   margin: 30px;
+  justify-content: center;
 }
 .typingeffect
 {
   font-size: var(--typing-font);
   margin-bottom: 30px;
-}
-
-nav ul{
-  font-size:var(--fontsize-nav) ;
-  text-align: center;
-  list-style-type: none;
-  text-decoration: none;
-  color: white !important;
-}
-nav ul li
-{
-  margin:40px;
-}
-
-a
-{
-  text-decoration: none;
-  color: rgb(34, 6, 8);
-}
-
-.subtopic
-{
-  margin:10px 10px 30px 10px !important;
-}
-p{
-  font-size: var(--fontsize-p);
-}
-h1,h2,h3,h4,p{
-  margin: 10px;
 }
 .social
 {
@@ -88,6 +26,7 @@ h1,h2,h3,h4,p{
   margin-top: 20px;
   display: flex;
   bottom: 60px;
+  color:#f4f5f9;
 }
 .social i
 {
@@ -99,26 +38,28 @@ h1,h2,h3,h4,p{
 {
   color: #ffffff;
 }
-.widecard
+
+
+.condiv
 {
-  border:0px solid #9a9b9c;
+  padding: 50px ;
+  flex:var(--condiv-flex);
+}
+
+.home
+{
   display: flex;
-  margin:30px 0px 30px 0px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
 }
-.widecard:hover
+.skills li
 {
-  color: #1b1d20;
-  background-color: #ffffff;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-.active
-{
-  font-weight: bolder;
-}
-.skills ul li
-{
+  display:inline-block;
   list-style-type:none;
   margin:30px;
+  justify-content: center;
 }
 
 @media all and (max-width: 450px) {
@@ -130,12 +71,6 @@ h1,h2,h3,h4,p{
   .App
   {
     flex-direction: column;
-  }
-  .sidebar
-  {
-    padding: 30px;
-    background: rgb(238,103,143);
-    background: linear-gradient(90deg, rgba(238,103,143,1) 50%, rgba(132,124,252,1) 80%);
   }
   .condiv
   {
@@ -170,7 +105,7 @@ a.email{
 .Collapsible{
   color: rgb(34, 3, 3);
   cursor: pointer;
-  padding: 18px;
+  padding: 5px;
   width: 100%;
   border: none;
   text-align: left;
@@ -180,11 +115,11 @@ a.email{
 
 
 .Collapsible__contentInner{
-  padding: 0 18px;
   background-color: rgb(255, 255, 255);
   font-size: 15px;
 
 }
-.b{
-  font-size :xx-large;
+.b li {
+  padding: 10px;
+  font-size :medium;
 }
