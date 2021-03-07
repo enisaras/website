@@ -5,8 +5,11 @@ render() {
 return (
 <div className="condiv">
 <h1 className="subtopic">Contact Me</h1>
-<h3>Email  : arasenis@gmail.com</h3>
+<div className = "new">
+<a href = "mailto: arasenis@gmail.com" 
+>Send me an Email</a>
 <Social />
+</div>
 </div>
 )
 }

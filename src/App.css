@@ -30,7 +30,7 @@ nav
 .condiv
 {
   padding: 100px ;
-  background-color: #f4f5f9;
+  background-color: #f6f6f8;
   flex:var(--condiv-flex);
 }
 
@@ -69,7 +69,7 @@ nav ul li
 a
 {
   text-decoration: none;
-  color: white;
+  color: rgb(34, 6, 8);
 }
 
 .subtopic
@@ -160,5 +160,13 @@ h1,h2,h3,h4,p{
   .social i
   {
     padding-right: 0px;
+  }
+  a.email{
+    color: rgb(17, 5, 5);
+  }
+  new
+  {
+    text-decoration: none;
+    color: red;
   }
 }
