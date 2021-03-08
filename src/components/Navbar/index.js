@@ -24,16 +24,16 @@ const Navbar = () => {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks to= "about">About</NavLinks>
+                <NavLinks to= "/about">About</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to= "education">Education</NavLinks>
+                <NavLinks to= "/education">Education</NavLinks>
               </NavItem>
               <NavItem>
-              <NavLinks to= "skills">Skills</NavLinks>
+              <NavLinks to= "/skills">Skills</NavLinks>
               </NavItem>
               <NavItem>
-              <NavLinks to= "contact">Contact</NavLinks>
+              <NavLinks to= "/contact">Contact</NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>
