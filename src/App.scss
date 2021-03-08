@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+:root{
+  --sidebar-flex:1.5;
+  --condiv-flex:6;
+  --fontsize-p:1.2rem;
+  --fontsize-nav:1.6rem;
+  --typing-font:3rem;
+}
+.subtopic
+{
+  margin:10px 10px 30px 10px !important;
+}
+.profilepic{
+  width: 300px;
+  margin: 30px;
+  justify-content: center;
+}
+.typingeffect
+{
+  font-size: var(--typing-font);
+  margin-bottom: 30px;
+}
+.social
+{
+  position: absolute;
+  margin-top: 20px;
+  display: flex;
+  bottom: 60px;
+  color:#f4f5f9;
+}
+.social i
+{
+  padding-right: 30px;
+  font-size: 25px;
+  color: #9a9b9c;
+}
+.social i:hover
+{
+  color: #ffffff;
+}
+
+
+.condiv
+{
+  padding: 50px ;
+  flex:var(--condiv-flex);
+}
+
+.home
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.skills li
+{
+  display:inline-block;
+  list-style-type:none;
+  margin:30px;
+  justify-content: center;
+}
+
+@media all and (max-width: 450px) {
+  :root {
+    --fontsize-nav:1rem;
+    --sidebar-flex:0;
+    --typing-font:2rem;
+  }
+  .App
+  {
+    flex-direction: column;
+  }
+  .condiv
+  {
+    padding: 50px ;
+  }
+  nav ul
+  {
+    display: flex;
+  }
+  nav ul li
+  {
+    margin: 10px;
+  }
+  .social
+  {
+    left:0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    bottom: 30px;
+  }
+  .social i
+  {
+    padding-right: 0px;
+  }
+ 
+  
+}
+a.email{
+  color: rgb(17, 5, 5);
+}
+.Collapsible{
+  color: rgb(34, 3, 3);
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+}
+
+
+.Collapsible__contentInner{
+  background-color: rgb(255, 255, 255);
+  font-size: 15px;
+
+}
+.b{
+  padding-left: 10px;
+  font-size :large;
+  cursor: text;
+}
+.coursework__trigger{
+  font-size: 25px;
+  display: block;
+  font-weight: 400;
+  text-decoration: none;
+  color: grey;
+  position: relative;
+  padding: 10px;
+
+
+  &:after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+  }
+
+  &.is-open {
+    &:after {
+      transform: rotateZ(180deg);
+    }
+  }
+
+  &.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+  }
+}
+.description{
+  padding-top: 10px;
+  font-size: 15px;
+  cursor:text;
+}
+.course{
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.course__trigger{
+  display: block;
+  font-weight: 400;
+  text-decoration: none;
+  color: grey;
+  position: relative;
+  padding: 10px;
+
+
+  &:after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+  }
+
+  &.is-open {
+    &:after {
+      transform: rotateZ(180deg);
+    }
+  }
+
+  &.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+  }
+
+}
+.Collapsible__trigger {
+  display: block;
+  font-weight: 400;
+  text-decoration: none;
+  color: grey;
+  position: relative;
+  padding: 10px;
+
+
+  &:after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+  }
+
+  &.is-open {
+    &:after {
+      transform: rotateZ(180deg);
+    }
+  }
+
+  &.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+  }
+}
+.secondtext li{
+  font-size: 20px;
+}

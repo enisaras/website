@@ -1,33 +1,45 @@
 import React from 'react';
+import { FaBars } from 'react-icons/fa';
 import {
   Nav,
-  NavLink,
+  NavbarContainer,
+  NavLogo,
+  NavLinks,
   Bars,
-  NavMenu
+  NavMenu,
+  MobileIcon,
+  NavItem,
+  NavBtn,
+  NavBtnLink,
 } from './NavbarElements';
 
 const Navbar = () => {
   return (
     <>
       <Nav>
-        <Bars />
-        <NavMenu>
-          <NavLink to='/website' activeStyle>
-            Home
-          </NavLink>
-          <NavLink to='/about' activeStyle>
-            About
-          </NavLink>
-          <NavLink to='/education' activeStyle>
-            Education
-          </NavLink>
-          <NavLink to='/skills' activeStyle>
-            Skills
-          </NavLink>
-          <NavLink to='/contact' activeStyle>
-            Contact
-          </NavLink>
-        </NavMenu>
+        <NavbarContainer>
+          <NavLogo to = "/website">Enis Aras</NavLogo>
+          <MobileIcon>
+            <FaBars />
+            </MobileIcon>
+            <NavMenu>
+              <NavItem>
+                <NavLinks to= "about">About</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to= "education">Education</NavLinks>
+              </NavItem>
+              <NavItem>
+              <NavLinks to= "skills">Skills</NavLinks>
+              </NavItem>
+              <NavItem>
+              <NavLinks to= "contact">Contact</NavLinks>
+              </NavItem>
+            </NavMenu>
+            <NavBtn>
+              <NavBtnLink to = "/resume">Resume</NavBtnLink>
+            </NavBtn>
+        </NavbarContainer>
       </Nav>
     </>
   );
