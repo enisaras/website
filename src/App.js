@@ -8,11 +8,23 @@ import Education from './contents/Education';
 import Skills from './contents/Skills';
 import Contact from './contents/Contact';
 import Resume from './contents/Resume';
+import {ThemeProvider} from "styled-components";
+import  {useDarkMode} from "./components/theme/DarkMode"
+import { GlobalStyles } from "./components/Globalstyle";
+import { lightTheme, darkTheme } from "./components/theme/Theme"
+import Toggle from "./components/theme/Toggler"
 function App() {
+  const [theme, themeToggler, mountedComponent] = useDarkMode();
+
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
     return (
+      <ThemeProvider theme={themeMode}>
       <Router>
+        <GlobalStyles />
         <div className="App">
+        
         <Navbar />
+        <Toggle theme={theme} toggleTheme={themeToggler} />
         {/* Route for Home.js contents */}
         <Route path="/website">
           <Home />
@@ -38,6 +50,7 @@ function App() {
         </Route>
         </div>
         </Router>
+        </ThemeProvider>
       );
     }
     
