@@ -34,7 +34,7 @@ function App() {
 
         <Toggle theme={theme} toggleTheme={themeToggler} />
         {/* Route for Home.js contents */}
-        <Route path="/website">
+        <Route path="/">
           <Home />
         </Route>
         {/* Route for About.js contents */}
