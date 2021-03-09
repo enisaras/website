@@ -66,7 +66,7 @@
   :root {
     --fontsize-nav:1rem;
     --sidebar-flex:0;
-    --typing-font:2rem;
+    --typing-font:1.5rem;
   }
   .App
   {
@@ -75,6 +75,9 @@
   .condiv
   {
     padding: 50px ;
+  }
+  .home{
+    margin-bottom:0px;
   }
   nav ul
   {
@@ -90,7 +93,7 @@
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    bottom: 30px;
+    bottom: 30px
   }
   .social i
   {
@@ -127,7 +130,6 @@ a.email{
   display: block;
   font-weight: 400;
   text-decoration: none;
-  color: grey;
   position: relative;
   padding: 10px;
 
@@ -150,11 +152,11 @@ a.email{
 
   &.is-disabled {
     opacity: 0.5;
-    background-color: grey;
   }
 }
 .description{
   padding-top: 10px;
+  padding-left: 20px;
   font-size: 15px;
   cursor:text;
 }
@@ -167,7 +169,6 @@ a.email{
   display: block;
   font-weight: 400;
   text-decoration: none;
-  color: grey;
   position: relative;
   padding: 10px;
 
@@ -190,7 +191,6 @@ a.email{
 
   &.is-disabled {
     opacity: 0.5;
-    background-color: grey;
   }
 
 }
@@ -198,7 +198,6 @@ a.email{
   display: block;
   font-weight: 400;
   text-decoration: none;
-  color: grey;
   position: relative;
   padding: 10px;
 
@@ -221,7 +220,6 @@ a.email{
 
   &.is-disabled {
     opacity: 0.5;
-    background-color: grey;
   }
 }
 .secondtext li{
@@ -254,4 +252,14 @@ hr {
 .new li{
   list-style-type: none;
   padding-top: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1e1f23;
+    --secondary-color: #232428;
+    --text-dark: #efefef;
+    --text: #c4c5c9;
+    --text-light: #6c6d71;
+    --text-lighter: #8e8f93;
+  }
 }

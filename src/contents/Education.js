@@ -4,7 +4,6 @@ class Education extends Component {
 render() {
 return (
 <div className="condiv">
-<h2 className="subtopic">Click on collapsibles to view coursework and descriptions!</h2>
 <Widecard title="Rensselaer Polytechnic Instute" where="Computer Science" gpa="GPA: 3.3"
 from="Fall 2020" to="Spring 2022" coursework = "Relevant Coursework"course1 = "Computer Organization"
 description1 = "Learned about Computer systems organization topics such as  processors, memory, I/O with the help of C language as well as digital logic topics like boolean algebra and logic gates."
