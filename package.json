@@ -1,6 +1,6 @@
 {
   "homepage": "http://enisaras.github.io/website",
-  "name": "website",
+  "name": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
