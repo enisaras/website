@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.scss';
-import{BrowserRouter as Router,Route,} from "react-router-dom";
+import{BrowserRouter as Router,Route, Redirect, Switch} from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from './contents/Home';
 import About from './contents/About';
@@ -34,8 +34,9 @@ function App() {
 
         <Toggle theme={theme} toggleTheme={themeToggler} />
         {/* Route for Home.js contents */}
-        <Route path="/website">
-          <Home />
+        <Switch>
+        <Route path="/home">
+              <Home />
         </Route>
         {/* Route for About.js contents */}
         <Route path="/about">
@@ -56,6 +57,7 @@ function App() {
         <Route path = "/resume">
           <Resume />
         </Route>
+        </Switch>
         </div>
         </Router>
         </ThemeProvider>
