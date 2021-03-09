@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.scss';
 import{BrowserRouter as Router,Route,} from "react-router-dom";
 import Navbar from './components/Navbar';
@@ -13,17 +13,25 @@ import  {useDarkMode} from "./components/theme/DarkMode"
 import { GlobalStyles } from "./components/Globalstyle";
 import { lightTheme, darkTheme } from "./components/theme/Theme"
 import Toggle from "./components/theme/Toggler"
+import Sidebar from './components/Sidebar';
 function App() {
   const [theme, themeToggler, mountedComponent] = useDarkMode();
-
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggle = () => {
+     setIsOpen(!isOpen); 
+  }
+  
     return (
       <ThemeProvider theme={themeMode}>
       <Router>
         <GlobalStyles />
         <div className="App">
+        <Sidebar isOpen = {isOpen} toggle = {toggle}/>
+        <Navbar toggle = {toggle} />
         
-        <Navbar />
+
         <Toggle theme={theme} toggleTheme={themeToggler} />
         {/* Route for Home.js contents */}
         <Route path="/website">
