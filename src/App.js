@@ -30,12 +30,10 @@ function App() {
         <div className="App">
         <Sidebar isOpen = {isOpen} toggle = {toggle}/>
         <Navbar toggle = {toggle} />
-        
-
         <Toggle theme={theme} toggleTheme={themeToggler} />
         {/* Route for Home.js contents */}
         <Switch>
-        <Route path="/home">
+        <Route exact path="/">
               <Home />
         </Route>
         {/* Route for About.js contents */}
