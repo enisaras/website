@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+//import { DiJsBadge} from "react-icons/di";
+//import IconAmazonwebservices from 'react-devicon/amazonwebservices/original'
 class Skills extends Component {
 constructor(props)
 {
