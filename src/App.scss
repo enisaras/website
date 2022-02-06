@@ -9,11 +9,13 @@
 .subtopic
 {
   margin:10px 10px 30px 10px !important;
+  font-size: 50px;
 }
 .profilepic{
-  width: 300px;
-  margin: 30px;
-  justify-content: center;
+  width: 400px;
+  height: 600px;
+  margin: 20px;
+
 }
 .typingeffect
 {
@@ -28,6 +30,7 @@
   bottom: 60px;
   color:#f4f5f9;
 }
+
 .social i
 {
   padding-right: 30px;
@@ -38,14 +41,20 @@
 {
   color: #ffffff;
 }
-
-
+.react-logo-icon{
+  width: 10px;
+}
+.devicon-devicon-plain {
+  width: 2em;
+}
 .condiv
 {
   padding:70px ;
   flex:var(--condiv-flex);
 }
-
+.condiv img{
+  padding: 0px;
+}
 .home
 {
   display: flex;
@@ -54,13 +63,15 @@
   align-items: center;
   
 }
-.skills li
-{
-  display:inline-block;
-  list-style-type:none;
-  margin:30px;
-  justify-content: center;
+
+.skills span{
+  display: inline-block;
+  width: 100px;
+  height: 15px;
+
+
 }
+
 
 @media all and (max-width: 450px) {
   :root {

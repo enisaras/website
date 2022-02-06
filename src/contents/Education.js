@@ -5,7 +5,13 @@ render() {
 return (
 <div className="condiv">
 <Widecard title="Rensselaer Polytechnic Instute" where="Computer Science" gpa="GPA: 3.3"
-from="Fall 2020" to="Spring 2022" coursework = "Relevant Coursework"course1 = "Computer Organization"
+from="Fall 2020" to="Summer 2022" coursework = "Relevant Coursework"
+course5 = "Data Mining"
+description5 = "Learned the foundations and mathematics behind and implemented many various machine learning algorithms including linear regression, deep neural networks, K-Means clustering and spectral clustering."
+course4 = "Programming Languages"
+description4 = "Learned about the essential aspects of programming languages, including theoretical foundations such as the lambda calculus, the actor model, and first-order logic."
+description44 = "Used a variety of programming languages which included Haskell, Erlang and Prolog to demonstrate ability of these theoretical foundations of computer science and compare how each language is used to solve common programming problems."
+course1 = "Computer Organization"
 description1 = "Learned about Computer systems organization topics such as  processors, memory, I/O with the help of C language as well as digital logic topics like boolean algebra and logic gates."
 description11 = "Learned how to code assembly level instructions in MIPS and x86 Assembly language."
 course2 = "Multivariable Calculus and Matrix Algebra"
@@ -13,7 +19,11 @@ description2 = "Learned about multivariable calculus topics like directional der
 description22 = "Learned about introductory Matrix Algebra topics like matrix algebra and systems of linear equations, vectors and linear transformations in R^n, eigenvectors and eigenvalues, applications in engineering and science."
 course3 = "Introduction to Algorithms"
 description3 = "Learned about important algorithms and topics including Breadth First Search and Depth First Search, Dijkstra's, divide and conquer, dynamic programming, greedy algorithms and NP-Completeness."
-description33 = "Designed many challenging algorithms to solve real-life problems using the above concepts with an emphasis on runtime and space complexity."/>
+description33 = "Designed many challenging algorithms to solve real-life problems using the above concepts with an emphasis on runtime and space complexity."
+
+
+/>
+
 <Widecard title="Hudson Valley Community College" where="Computer Science" gpa="GPA: 4.0"
 from="Summer 2019" to="Summer 2020" coursework = "Relevant Coursework" course1 = "Data Structures"
 description1 = "Learned about data structures like stacks, queues, lists, trees, and collections and their proper application."

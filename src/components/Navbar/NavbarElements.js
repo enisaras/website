@@ -9,7 +9,7 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   position: sticky;
-  font-size: 1rem;
+  font-size: 1.2rem;
   z-index: 10;
   /* Third Nav */
   /* justify-content: flex-start; */
@@ -50,8 +50,9 @@ export const NavLogo = styled(LinkR)`
   font-size: 1.5rem;
   display: flex;
   aligh-items: center;
-  margin-left: 24px;
-  font-weight: bold;
+  margin-left: -275px;
+  margin-right: -75px;
+    font-weight: bold;
   text-decoration: none;
 `;
 export const MobileIcon = styled.div`
@@ -73,7 +74,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
+  margin-right: -175px;
 
   @media screen and (max-width: 768px){
     display: none;
@@ -116,7 +117,8 @@ export const NavBtnLink = styled(LinkR)`
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   /* Second Nav */
-  margin-left: 24px;
+  margin-left: 200px;
+  margin-right: -200px;
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
